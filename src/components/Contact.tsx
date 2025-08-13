@@ -62,8 +62,8 @@ export default function Contact() {
             </p>
             <p className="text-sm mt-2">
               <strong>Email:</strong>{" "}
-              <a className="text-brand" href="mailto:hello@qmclean.com.ng">
-                hello@qmclean.com.ng
+              <a className="text-brand" href="mailto:hello@DemoClean.com.ng">
+                hello@DemoClean.com.ng
               </a>
             </p>
             <p className="text-sm mt-2">

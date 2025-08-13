@@ -1,54 +1,85 @@
-export default function Footer() {
-  return (
-    <footer className="bg-gray-900 text-white px-4 py-10">
-      <div className="container mx-auto grid md:grid-cols-3 gap-8">
-        {/* Logo */}
-        <div>
-          <img src="/logo.svg" alt="QMclean" className="h-10 mb-4" />
-          <p className="text-gray-400 text-sm">
-            Quality cleaning services for homes and businesses in Lagos.
-          </p>
-        </div>
+import React from "react";
 
-        {/* Links */}
+const Footer = () => {
+  return (
+    <footer className="border-t border-gray-100 px-4">
+      <div
+        className="
+          container py-10 grid gap-8
+          vsm:grid-cols-1
+          xmd:grid-cols-2
+          lg:grid-cols-4
+        "
+      >
         <div>
-          <h4 className="font-semibold mb-3">Quick Links</h4>
-          <ul className="space-y-2 text-gray-400 text-sm">
+          <div className="flex items-center gap-2">
+            <img src="/logo.svg" alt="DemoClean" className="h-8 w-8" />
+            <span className="font-semibold">DemoClean</span>
+          </div>
+          <p className="muted mt-3">Clean spaces. Clear minds.</p>
+        </div>
+        <div>
+          <p className="font-semibold">Company</p>
+          <ul className="mt-3 space-y-2 text-sm">
             <li>
-              <a href="#home" className="hover:text-brand">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#services" className="hover:text-brand">
+              <a className="hover:text-brand" href="#services">
                 Services
               </a>
             </li>
             <li>
-              <a href="#about" className="hover:text-brand">
-                About
+              <a className="hover:text-brand" href="#process">
+                Process
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:text-brand">
+              <a className="hover:text-brand" href="#pricing">
+                Pricing
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p className="font-semibold">Support</p>
+          <ul className="mt-3 space-y-2 text-sm">
+            <li>
+              <a className="hover:text-brand" href="#faq">
+                FAQ
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-brand" href="#contact">
                 Contact
               </a>
             </li>
           </ul>
         </div>
-
-        {/* Contact */}
         <div>
-          <h4 className="font-semibold mb-3">Contact Us</h4>
-          <p className="text-sm text-gray-400">📍 Lagos, Nigeria</p>
-          <p className="text-sm text-gray-400 mt-2">📞 +234 800 000 0000</p>
-          <p className="text-sm text-gray-400 mt-2">✉ hello@qmclean.com.ng</p>
+          <p className="font-semibold">Contact</p>
+          <p className="text-sm mt-3">Lagos, Nigeria</p>
+          <p className="text-sm mt-1">
+            <a className="text-brand" href="tel:+2348000000000">
+              +234 800 000 0000
+            </a>
+          </p>
+          <p className="text-sm mt-1">
+            <a className="text-brand" href="mailto:hello@DemoClean.com.ng">
+              hello@DemoClean.com.ng
+            </a>
+          </p>
         </div>
       </div>
-
-      <div className="mt-10 border-t border-gray-700 pt-4 text-center text-gray-500 text-sm">
-        © {new Date().getFullYear()} QMclean. All rights reserved.
+      <div className="border-t border-gray-100 px-4">
+        <div className="container py-6 text-xs text-gray-500 flex flex-wrap items-center justify-between gap-2">
+          <span>
+            © {new Date().getFullYear()} DemoClean. All rights reserved.
+          </span>
+          <a href="#top" className="hover:text-brand">
+            Back to top ↑
+          </a>
+        </div>
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

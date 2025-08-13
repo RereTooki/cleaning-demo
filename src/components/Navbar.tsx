@@ -6,7 +6,7 @@ export default function Navbar() {
     <header className="fixed w-full bg-white shadow-sm z-50">
       <div className="container mx-auto px-4 flex justify-between items-center h-16">
         {/* Logo */}
-        <img src="/logo.svg" alt="QMclean" className="h-10" />
+        <img src="/logo.svg" alt="DemoClean" className="h-10" />
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex space-x-6 text-gray-700">
