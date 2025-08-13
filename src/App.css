@@ -4,6 +4,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/* subtle global polish */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply text-gray-800 bg-white;
+  }
+}
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-lg px-5 py-3 bg-brand text-white hover:bg-brand-600 transition shadow;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center rounded-lg px-5 py-3 border border-brand text-brand hover:bg-brand-50 transition;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-card border border-gray-100;
+  }
+  .section {
+    @apply py-16 md:py-24;
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold tracking-tight text-gray-900;
+  }
+  .muted {
+    @apply text-gray-600;
+  }
+}
+
 *,
 *::before,
 *::after {

@@ -18,9 +18,22 @@ export default {
 
     extend: {
       colors: {
-        whites: "hsl(0, 0%, 100%)", //Added s at the end of every name to avoid clashes
-        darkblue: "#062e6f",
-        greens: "#1F3C0C",
+        brand: {
+          DEFAULT: "#0F9D8D", // accent (teal). change once; updates everywhere.
+          50: "#F0FAF9",
+          100: "#DCF5F2",
+          200: "#B8EAE4",
+          300: "#8FDCD3",
+          400: "#4FC7B9",
+          500: "#0F9D8D",
+          600: "#0C8074",
+          700: "#0A6A61",
+          800: "#094F49",
+          900: "#083F3B",
+        },
+      },
+      boxShadow: {
+        card: "0 10px 25px rgba(16,24,40,0.06)",
       },
     },
   },
