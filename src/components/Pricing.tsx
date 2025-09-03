@@ -29,7 +29,7 @@ const Pricing = () => {
               )}
             >
               <h3 className="text-lg font-semibold">{p.name}</h3>
-              <p className="mt-1 text-2xl font-bold text-gray-900">{p.price}</p>
+              <p className="mt-1 text-2xl font-bold text-gray-900 S">{p.price}</p>
               <ul className="mt-4 grid gap-2">
                 {p.features.map((f) => (
                   <li key={f} className="muted">
